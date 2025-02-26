@@ -6,8 +6,8 @@ const pkgPath = path.resolve('package.json')
 
 // 校验包合法性
 fs.accessSync(path.resolve('dist'), fs.constants.F_OK)
-fs.accessSync(path.resolve('dist/canvas-editor.es.js'), fs.constants.F_OK)
-fs.accessSync(path.resolve('dist/canvas-editor.umd.js'), fs.constants.F_OK)
+fs.accessSync(path.resolve('dist/rich-editor.es.js'), fs.constants.F_OK)
+fs.accessSync(path.resolve('dist/rich-editor.umd.js'), fs.constants.F_OK)
 
 // 缓存项目package.json
 const sourcePkg = fs.readFileSync(pkgPath, 'utf-8')
