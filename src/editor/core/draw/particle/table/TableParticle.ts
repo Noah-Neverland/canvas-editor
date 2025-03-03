@@ -450,8 +450,12 @@ export class TableParticle {
     } = this.range.getRange()
     // 存在跨行/列
     if (!isCrossRowCol) return
-    let startTd = trList[startTrIndex!].tdList[startTdIndex!]
-    let endTd = trList[endTrIndex!].tdList[endTdIndex!]
+    let startTd =
+      (!!trList[startTrIndex!] &&
+        trList[startTrIndex!].tdList[startTdIndex!]) ||
+      {}
+    let endTd =
+      (!!trList[endTrIndex!] && trList[endTrIndex!].tdList[endTdIndex!]) || {}
     // 交换起始位置
     if (startTd.x! > endTd.x! || startTd.y! > endTd.y!) {
       // prettier-ignore
