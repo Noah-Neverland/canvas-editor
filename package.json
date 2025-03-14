@@ -2,7 +2,7 @@
   "name": "@noahhp/rich-editor",
   "author": "Hss",
   "license": "MIT",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "rich text editor by canvas/svg",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
