@@ -2209,7 +2209,7 @@ export class Draw {
           this.underline.recordFillInfo(
             ctx,
             x - offsetX,
-            y + curRow.height - rowMargin + offsetY,
+            y + curRow.height - rowMargin + offsetY + 4,
             metrics.width + offsetX,
             0,
             color,
